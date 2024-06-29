@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <p>The form HTML element represents a document section containing interactive controls for submitting information.</p>
+    <form>
+
+        <!-- input to name -->
+        <label for="name_container">Write your name here: </label>
+        <input id="name_container" required type="text" placeholder="Write your name...">
+        <br>
+
+        <!-- input to email -->
+        <label for="email">Email: </label>
+        <input id="email" required type="email" placeholder="email">
+        <br>
+
+        <!-- input to password -->
+        <label for="Password">Password: </label>
+        <input id="Password" required type="password" placeholder="password">
+        <br>
+    
+        <h2>Your animal</h2>
+        <input type="radio" name="animal" value="dog" id="dog">
+        <label for="dog">Dog</label>
+        <br>
+        <input type="radio" name="animal" value="cat" id="cat">
+        <label for="cat">Cat</label>
+     
+        <br>
+        <input type="radio" name="animal" value="bird" id="bird">
+        <label for="bird">Bird</label>
+
+        <br>
+        <input type="radio" name="" value="bunny" id="bunny">
+        <label for="bunny">Bunny</label>
+        <!-- input radio name should be the same name for example loog the input bunny on the page--> 
+
+
+
+        <h2>Fav food</h2>
+        <input type="checkbox" name="item1" value="pizza"">
+        <label for="item1">Pizza</label>
+        <br>
+        <input type="checkbox" name="item2" value="Burguer"">
+        <label for="item2">Burguer</label>
+        <br>
+        <input type="checkbox" name="item3" value="Sushi"">
+        <label for="item3">Sushi</label>
+        <br>
+
+
+        <h2>Choose a color</h2>
+        <select name="cores" id="cores">
+            <option selected disabled value="">Choose a option</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+        <!-- selected will show in first position and disabled goes disabilited the option -->
+        <br>
+        <br>
+
+
+        <h2>type your mensage</h2>
+        <textarea name="mensage" placeholder="write your mensage" rows="15" cols="55">
+           
+        </textarea>
+
+
+        <br>
+        <br>
+        <!-- button submit -->
+        <input type="submit" value="Send">
+
+    </form>
+</body>
+</html>
