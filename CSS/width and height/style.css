@@ -1,0 +1,12 @@
+.item1 {
+    height: 150px;
+    background-color: bisque;
+    max-width: 500px;
+}
+
+/* The width CSS property sets an element's width */
+/* The height CSS property specifies the height of an element.  */
+
+/* and we have a propety called max-width. The max-width CSS property sets the maximum width of an element the same thins to 
+    max-height
+*/

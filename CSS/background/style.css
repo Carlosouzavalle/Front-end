@@ -1,0 +1,27 @@
+body {
+    background-color: bisque;
+}
+
+.back {
+    height: 500px;
+    /* background-image: url(ee7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray; */
+
+        
+    /* short hand */
+    background: gray url(ee7.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* The background-image CSS property sets one or more background images on an element. 
+
+    background-repeat: no-repeat; won't let you repeat the content
+
+    background-size: cover; gonna cover all the content area
+
+    background-color: gray; The background-color CSS property sets the background color of an element.
+
+
+*/

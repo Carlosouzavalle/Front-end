@@ -1,0 +1,32 @@
+h1 {
+    /* border-left: 10px solid red;
+    border-right: 10px solid blue;
+    border-bottom: 10px solid orange;
+    border-top: 10px solid green; */
+    border-radius: 15px;
+
+    /* shorthand */
+    border: 1px solid red;
+
+    text-align: center; /* set the text to center */
+    background-color: black;
+    color: gray;  /* set the color of the text */
+    margin: 50px 0 100px; /* up right down left  */
+
+
+    /* padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px; */
+    /* The padding CSS shorthand property sets the padding area on all four sides of an element at once. */
+    
+    /* shorthand */
+    padding: 50px; /*as like the margin we can do the same thing here up right down left  */
+}
+
+p {
+    margin: 25px; 
+}
+
+/* The margin CSS shorthand property sets the margin area on all four sides of an element. */
+/* The border shorthand CSS property sets an element's border. It sets the values of border-width, border-style, and border-color. */
