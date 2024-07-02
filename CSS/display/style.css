@@ -1,0 +1,13 @@
+p {
+    display: inline;
+    border: 1px solid black;
+}
+
+.item1 {
+    display: block;
+    /* não vai mostrar o item já se for o display: block vai mostrar */
+}
+
+.item1:hover {
+    display: none;
+}

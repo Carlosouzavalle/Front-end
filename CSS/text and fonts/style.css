@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+
+
+.texto1 {
+    text-align: center;
+    direction: rtl;
+    unicode-bidi: bidi-override; /* this is more used to languages like japanese, arabic and etc.. */
+    text-transform: uppercase; /* The text-transform CSS property specifies how to capitalize an element's text. */
+    text-indent: 50px; /* The text-indent CSS property sets the length of empty space (indentation) that is put before lines of text in a block. */
+    letter-spacing: 5px; /* The letter-spacing CSS property sets the horizontal spacing behavior between text characters. */
+}
+
+.price {
+    text-decoration: line-through;
+    /* we can use to inform the user a promotion of the something */
+}
+
+a {
+    text-decoration: none;
+    /* remove the decoration of the text */
+}
+
+.font {
+    font-family: "Ga Maamli", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
