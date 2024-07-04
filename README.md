@@ -3,3 +3,4 @@ Hey everyone, I'm Carlos Eduardo, I'm currently studying Front-end and this repo
 Modules
 * HTML
 * CSS
+* JAVASCRIPT
