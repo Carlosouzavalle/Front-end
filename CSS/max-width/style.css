@@ -1,0 +1,13 @@
+div {
+    border: 1px solid black;
+}
+
+.exemplo1 {
+    max-width: 400px;
+}
+
+.exemplo2 {
+    max-width: 600px;
+}
+
+/* The max-width CSS property sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value specified by max-width. */

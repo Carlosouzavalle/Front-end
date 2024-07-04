@@ -1,0 +1,27 @@
+.exemplo1 {
+    background: gray;
+    color: black;
+    height: 50px;
+    overflow: auto;
+}
+
+.exemplo2 {
+    background: rgb(61, 6, 6);
+    color: rgb(34, 45, 212);
+    height: 50px;
+    overflow: visible;
+}
+
+.exemplo3 {
+    background: rgb(197, 10, 10);
+    color: rgb(142, 190, 29);
+    height: 50px;
+    overflow: scroll;
+}
+
+
+/* overflow: scroll will hide all overflowing content and cause scroll bars to appear on the element in question. If the content does not overflow, the scrollbars will still be visible, but disabled.
+
+overflow: auto is very similar, but the scrollbars only appear when the content is overflowing. */
+
+/* The overflow CSS shorthand property sets the desired behavior when content does not fit in the element's padding box (overflows) in the horizontal and/or vertical direction. */

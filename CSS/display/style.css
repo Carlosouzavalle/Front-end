@@ -11,3 +11,29 @@ p {
 .item1:hover {
     display: none;
 }
+
+div {
+    width: 33%;
+    display: inline-block;
+    height: 150px;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.black {
+    background: black;
+}
+
+
+/* block: The element generates a block box, generating line breaks both before and after the element when in the normal flow.
+inline: The element generates one or more inline boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space.
+display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+
+
+*/
