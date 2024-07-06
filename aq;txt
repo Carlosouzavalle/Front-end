@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de musica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 
+    <!-- Header -->
+    <header>
+        <nav class="navigation">
+            <div>
+                <li><a href="#">Logo</a></li>
+            </div>
+            <ol class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Products</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    <!-- Header end -->
+
+
+    <!-- Section 1 Banner and a title -->
+    <section class="container_banner"> 
+        <h2>A vida fica mais animada com uma trilha sonora</h2>
+
+        <div class="banner">
+            <img src="img/img_mouseover3.jpg" alt="">
+        </div>
+    </section>
+    <!-- End of Section -->
+
+
+    <!-- Section Products -->
+    
+    <section class="container_products">
+        <h2>Conheça nossos produtos</h2>
+        <div class="products">
+            <div class="item">
+                <img src="./img/guitarras.jpeg" alt="guitarras">
+                <h3>Guitarras</h3>
+            </div>
+            <div class="item">
+                <img src="./img//baixos.png" alt="baixos">
+                <h3>Baixos</h3>
+            </div>
+            <div class="item">
+                <img src="./img//baterias.webp" alt="baterias">
+                <h3>Baterias</h3>
+            </div>
+            <div class="item">
+                <img src="./img//equipamentos de audio.jpg" alt="equipamentosDeAudio"
+            </div>
+        </div>
+    </section>
+    <!-- End Products Section -->
+
+
+    <!-- Section 2 Banner and a title -->
+    <section class="container_banner"> 
+        <h2>Os melhores preços do mercado</h2>
+        <div class="banner">
+            <img src="img/img_mouseover3.jpg" alt="">
+        </div>
+    </section>
+    <!-- End of Section -->
+
+
+        <!-- Section Promotions -->
+        <section class="container_promotions">
+            <h2>Promoções inperdiveis</h2>
+            <div class="promotions">
+                <div class="item">
+                    <img src="img/fender.webp" alt="guitarras">
+                    <h3>Guitarra Fender American Ultra Telecaster RW APL</h3>
+                </div>
+                <div class="item">
+                    <img src="./img//baixos.png" alt="baixos">
+                </div>
+                <div class="item">
+                    <img src="./img//baterias.webp" alt="baterias">
+                </div>
+                <div class="item">
+                    <img src="./img//equipamentos de audio.jpg" alt="equipamentosDeAudio">
+                </div>
+                <div class="item">
+                    <img src="./img//equipamentos de audio.jpg" alt="equipamentosDeAudio">
+                </div>
+                <div class="item">
+                    <img src="./img//equipamentos de audio.jpg" alt="equipamentosDeAudio">
+                </div>
+                <div class="item">
+                    <img src="./img//equipamentos de audio.jpg" alt="equipamentosDeAudio">
+                </div>
+                <div class="item">
+                    <img src="./img//equipamentos de audio.jpg" alt="equipamentosDeAudio">
+                </div>
+            </div>
+        </section> -->
+
+
+        <!-- End Promotions Section -->
+</body>
+
+</html>

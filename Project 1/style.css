@@ -37,29 +37,47 @@
     margin-top: 20px;
 }
 
+.container_products h2 {
+    text-align: center;
+    margin: 20px 0 20px;
+}
+
 .products {
     display: flex;
-    justify-content: center;
 }
 
-.container_products  h2 {
+
+
+
+/* Set 300px to our card and after width 100% */
+.card {
+    
+    max-width: 250px;
+    margin: auto;
     text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.products div {
-    margin: 5% 10px 0 10px;
+/* our image go to catch 100% of our card 300px */
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
-.products img {
-    width: 180px;
-    height: 140px;
-}
+
+
+
+
+
+
 
 
 
 
 /* MEDIA QUERIES */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
     .navigation {
         display: flex;
         justify-content: space-between;
@@ -90,7 +108,6 @@
         text-align: center;
     }
 }
-
 
 
 @media (max-width: 500px) {
