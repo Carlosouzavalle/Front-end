@@ -47,11 +47,8 @@
 }
 
 
-
-
 /* Set 300px to our card and after width 100% */
 .card {
-    
     max-width: 250px;
     margin: auto;
     text-align: center;
@@ -60,6 +57,7 @@
     overflow: hidden;
 }
 
+
 /* our image go to catch 100% of our card 300px */
 .card img {
     width: 100%;
@@ -67,9 +65,19 @@
 }
 
 
+.promotion_section h3 {
+    text-align: center;
+    margin: 20px 0 50px;
+}
 
+.container_promotion {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-
+.infos {
+    padding: 10px;
+}
 
 
 
