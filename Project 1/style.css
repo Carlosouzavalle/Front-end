@@ -10,7 +10,7 @@
     justify-content: space-between;
     padding: 10px;
     background-color: black;
-    
+
 }
 
 .navigation a {
@@ -27,7 +27,7 @@
 }
 
 
-.container_banner > h2 {
+.container_banner>h2 {
     text-align: center;
     margin-top: 20px;
 }
@@ -62,30 +62,26 @@
 .card img {
     width: 100%;
     border-bottom: 1px solid #ccc;
+
+
+    height: auto;
 }
 
 
 .promotion_section h3 {
     text-align: center;
-    margin: 20px 0 50px;
+
 }
 
 .container_promotion {
     display: flex;
-    flex-wrap: wrap;
 }
-
-.infos {
-    padding: 10px;
-}
-
-
 
 
 
 
 /* MEDIA QUERIES */
- @media (max-width: 600px) {
+@media (max-width: 600px) {
     .navigation {
         display: flex;
         justify-content: space-between;
@@ -116,6 +112,9 @@
         text-align: center;
     }
 }
+
+
+
 
 
 @media (max-width: 500px) {
