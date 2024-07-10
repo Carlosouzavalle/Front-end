@@ -55,8 +55,21 @@ that variable is not defined
 
 // Another way to declare a variable
 
-let texto = function() {
-    console.log('Texto legal')
-}
+// let texto = function() {
+//     console.log('Texto legal')
+// }
 
-console.log(texto())
+// console.log(texto())
+
+
+
+//arrow function 
+// let adicao = (a,b) => a + b
+// console.log(20+30) 
+
+let aviso = () => 'Warning!!!'
+console.log(aviso())
+
+
+let aviso2 = (nome) => `Warning!! ${nome}`
+console.log(aviso2('carlos'))
