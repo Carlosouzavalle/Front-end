@@ -1,10 +1,13 @@
 //using the literal of object
 
+let nacionalidade = "brasileira" // computed propety
+
 let cliente = {
     nome: 'Carlos',
     sobrenome: 'Eduardo',
     telefone: 123456789,
-
+    "tipo cliente": "VIP", //assim também funciona
+    [nacionalidade] : "pt",
 
 
     //------------------------------------------
@@ -33,3 +36,7 @@ console.log(cliente.nome_completo())
 console.log(cliente.alterar_sobrenome('Valle'))
 console.log(cliente.nome_completo())
 console.log(cliente.alterar_telefone(987456321))
+delete cliente.telefone
+console.log(cliente.telefone)
+console.log(cliente["tipo cliente"])
+console.log(cliente.brasileira)
