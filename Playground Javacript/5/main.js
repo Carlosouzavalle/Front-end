@@ -21,8 +21,6 @@ function MulptiplicaArray(numeros) {
     return mult
 }
 
-
-
 let numeros = [3, 3, 3]
 
 let resultado1 = sommaArray(numeros) 
