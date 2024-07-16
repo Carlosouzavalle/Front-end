@@ -17,6 +17,16 @@
     splice The splice() method of Array instances changes the contents of an array by removing 
     or replacing existing elements and/or adding new elements in place.
 
+
+
+    slice - The slice() method of Array instances returns a shallow copy of a portion of an array into 
+    a new array object selected  from start to end (end not included) 
+    where start and end represent the index of items in that array
+
+
+    concat - The concat() method of Array instances is used to merge two or more arrays. 
+    This method does not change the existing arrays, but instead returns a new array.
+
 */
 
 
@@ -62,3 +72,12 @@ console.log(nomes2)
 
 nomes2.splice(2, 0, 'jefiner, samantha')
 console.log(nomes2)
+
+
+
+let nomes_extraidos = nomes2.slice(1,3)
+console.log(nomes2)
+console.log(nomes_extraidos)
+
+let nova_lista = nomes_extraidos.concat(nomes2)
+console.log(nova_lista)
