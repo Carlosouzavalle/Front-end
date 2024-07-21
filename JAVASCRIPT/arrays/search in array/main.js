@@ -39,6 +39,8 @@ let posicao4 = nomes.lastIndexOf('fernanda')
 console.log(posicao4)
 
 
+
+
 // returns a boolean if exist or not
 let pesquisa = 'ana'
 if(nomes.includes(pesquisa)) {
@@ -53,8 +55,6 @@ const CLIENTES = [
     {Nome: 'Caio', idade: 20 },
     {Nome: 'Bia', idade: 18 },
 ]
-
-
 let cliente = CLIENTES.find(cli => cli.Nome == 'Caio')
 console.log(cliente)
 
