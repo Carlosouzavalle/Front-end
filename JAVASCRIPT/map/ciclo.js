@@ -18,5 +18,5 @@ for(let key of valores.entries()) {
 }
 console.log('-' .repeat(50))
 valores.forEach((valor, key) => {
-    console.log(`o valor é ${valor} e a chave é ${key}`)
+    console.log(`A chave é ${key} e o valor é ${valor}`)
 })
