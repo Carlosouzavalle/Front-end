@@ -37,8 +37,6 @@ const user = loginUser('cadu@gmail.com', '123456', (user) => {
             console.log({videoDetails})
         })
     })
-
-
 }, (error) => {
     console.log({error})
 });
