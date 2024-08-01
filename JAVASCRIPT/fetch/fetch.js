@@ -16,4 +16,4 @@ const obterDados = () => {
     },1500)
 }
 
-obterDados()
+// obterDados()

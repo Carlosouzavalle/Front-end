@@ -49,7 +49,7 @@
 
 /* Set 300px to our card and after width 100% */
 .card {
-    max-width: 250px;
+    max-width: 150px;
     margin: auto;
     text-align: center;
     background-color: #fff;
@@ -62,8 +62,6 @@
 .card img {
     width: 100%;
     border-bottom: 1px solid #ccc;
-
-
     height: auto;
 }
 
@@ -75,8 +73,17 @@
 
 .container_promotion {
     display: flex;
+    flex-wrap: wrap;
+    
 }
 
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
 
 
 
@@ -148,3 +155,5 @@
         text-align: center;
     }
 }
+
+
