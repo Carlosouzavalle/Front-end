@@ -4,4 +4,4 @@ Modules
 * HTML
 * CSS
 * Javascript
-* Typescript
+* Next/React + Typescript
