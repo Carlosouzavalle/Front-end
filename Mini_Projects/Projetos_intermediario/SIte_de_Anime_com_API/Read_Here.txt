@@ -1,0 +1,5 @@
+Express: Para gerenciar o servidor e rotas HTTP.
+Axios: Para fazer requisições à API de animes.
+Path: Para manipular caminhos de arquivos e diretórios de forma segura e compatível com diferentes sistemas operacionais.
+
+

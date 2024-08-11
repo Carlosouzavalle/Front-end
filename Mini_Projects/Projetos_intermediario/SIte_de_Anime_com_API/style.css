@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header {
+    background-color: blueviolet;
+    padding: 15px;
+}
+.logo {
+    color: white;
+    font-size: 40px;
+}
+#anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 800px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#anime-list div {
+    margin: 15px;
+    text-align: center;
+}
+
+#anime-list img {
+    border-radius: 10px;
+}
