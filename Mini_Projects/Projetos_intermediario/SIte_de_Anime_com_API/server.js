@@ -6,10 +6,15 @@ const app = express();
 // Serve arquivos estáticos
 app.use(express.static(path.join(__dirname)));
 
-// Rota para buscar os animes
+// Rota para buscar todos os animes ou por título
 app.get('/api/animes', async (req, res) => {
     try {
-        const response = await axios.get('https://api.jikan.moe/v4/anime');
+        const searchQuery = req.query.q; // Captura o termo de busca da query string
+        const url = searchQuery 
+            ? `https://api.jikan.moe/v4/anime?q=${encodeURIComponent(searchQuery)}` 
+            : 'https://api.jikan.moe/v4/anime';
+        
+        const response = await axios.get(url);
         const animes = response.data.data;
         res.json(animes);
     } catch (error) {
