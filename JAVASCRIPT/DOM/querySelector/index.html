@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        ul li:last-child {  /* aqui vamos pegar o ultimo elemento e estilizar ele sem a utilização de uma class */
+            color: blue;
+            font-size: 25px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>Primeiro paragrafo</p>
+
+    <p>segundo paragrafo</p>
+
+
+    <div>
+        texto 1 dentro de um div
+    </div>
+
+    <div>
+        texto 2 dentro de um  div
+    </div>
+
+
+
+    <ul> 
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+    </ul>
+
+
+
+    <script>
+        /*
+            querySelector
+            querySelectorAll    
+        */
+
+
+        let e = document.querySelector('p') // vai buscar um elemento especifico
+        console.log(e)
+
+
+        let a = document.querySelectorAll('div') // vai buscar todos os elementos 
+        console.log(a)
+
+
+    </script>
+</body>
+</html>

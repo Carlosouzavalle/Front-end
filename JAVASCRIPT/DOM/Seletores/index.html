@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+
+
+        .cor-do-texto {
+            color: red;
+        }
+
+
+    </style>
+<body>
+   <h3 id="titulo">titulo em html</h3>
+
+   <p id="texto_1" class="cor-do-texto">paragrafo em html</p>
+
+   <div name="este_div">
+        este é um paragrafo
+   </div>
+
+
+   <script>
+            /*
+                getElementById
+                getElementsByName
+                getElementsByTagName
+                getElementsByClassName
+            
+            */
+
+
+            console.log(document.getElementById('titulo').innerText = 'Novo titulo') // vai buscar pelo ID
+
+            console.log(document.getElementsByName('este_div')) // pelo name mais não é muito comum usar
+
+            console.log(document.getElementsByTagName('p')[0].innerText = 'Mudou o texto') // vai buscar pela tag html
+ 
+            document.getElementsByClassName('cor-do-texto') // vai buscar pela class do elemento
+
+
+            
+   </script>
+</body>
+</html>
