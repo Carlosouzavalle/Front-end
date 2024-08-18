@@ -1,0 +1,12 @@
+Grade Responsiva:
+
+grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4: Define um layout de grade responsivo, onde a quantidade de colunas aumenta em resoluções maiores.
+gap-4: Adiciona um espaçamento entre os itens da grade.
+Estilização dos Itens:
+
+bg-white p-4 rounded shadow-md: Adiciona fundo branco, padding, bordas arredondadas e sombra aos itens.
+object-cover: Garante que as imagens mantenham sua proporção e cubram a área disponível.
+Tamanhos das Imagens:
+
+w-full h-48: Define que as imagens ocupem toda a largura do item e tenham uma altura fixa.
+rounded: Arredonda as bordas das imagens para um visual mais limpo.

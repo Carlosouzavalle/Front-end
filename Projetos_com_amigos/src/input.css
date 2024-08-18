@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Yuuta Kinoshi's color palette */
+:root {
+  --bg-color: #11111f;
+  --purple: #781761;
+  --dark-purple: #501545;
+  --light-pink: #f1c5e6;
+  --mid-pink: #ec86d0;
+  --dark-pink: #b80688;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: var(--light-pink);
+  color: var(--bg-color);
+  font-weight: 700;
+  border: 2px solid var(--light-pink);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: .20s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: var(--light-pink);
+}
