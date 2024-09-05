@@ -1,9 +1,16 @@
 export default function page() {
+    const raio = 4.5
+    const PI = 3.14159
     
     function anoAtual() {
         return new Date().getFullYear()
     }
     
+
+    const titulo = <div>
+        <h1>Titulo</h1>
+        <h2>Sub titulo</h2>
+    </div>
     
     return (
         <div>
@@ -13,6 +20,10 @@ export default function page() {
                 <span> {Math.random().toFixed(1)} </span>
                 <span> {anoAtual()} </span>
             </div>
+            <div>
+                <span>{PI * Math.pow(raio, 2)}</span>
+            </div>
+            {titulo}
         </div>
     )
 }
