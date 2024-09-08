@@ -1,3 +1,4 @@
+import Pagina from "@/components/template/Pagina";
 import Link from "next/link";
 
 
@@ -10,6 +11,7 @@ export default function Home() {
         <nav className="flex flex-col">
             <Link href="/primeiro">Primeiro Componente</Link>
             <Link href="/flexbox">Flexbox</Link>
+            <Link href="/pagina">Componente Pagina</Link>
         </nav>
      </div>
   );
