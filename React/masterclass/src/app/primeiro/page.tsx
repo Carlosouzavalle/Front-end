@@ -1,3 +1,5 @@
+import Pagina from "@/components/template/Pagina"
+
 export default function page() {
     const raio = 4.5
     const PI = 3.14159
@@ -13,18 +15,20 @@ export default function page() {
     </div>
     
     return (
-        <div>
-            <h1>Primeiro</h1>
-            <div className="flex flex-col">
-                <span> {1 + 1} </span>
-                <span> {Math.random().toFixed(1)} </span>
-                <span> {anoAtual()} </span>
-            </div>
+        <Pagina>
             <div>
-                <span>{PI * Math.pow(raio, 2)}</span>
+                <h1>Primeiro</h1>
+                <div className="flex flex-col">
+                    <span> {1 + 1} </span>
+                    <span> {Math.random().toFixed(1)} </span>
+                    <span> {anoAtual()} </span>
+                </div>
+                <div>
+                    <span>{PI * Math.pow(raio, 2)}</span>
+                </div>
+                {titulo}
             </div>
-            {titulo}
-        </div>
+        </Pagina>
     )
 }
 

@@ -6,9 +6,6 @@ export default function MenuItem(props: any) {
         flex items-center gap-1
         hover:bg-blue-500 p-2
         
-        
-        
-        
         ">
             {props.children}
         </Link>
@@ -19,7 +16,6 @@ export default function MenuItem(props: any) {
      {props.children}  children é uma propriedade especial e ele representa os elementos
      filhos que foram passados pra seu componente a vantagem é que podemos passar qualquer coisa
      inclusive icones
-
 
 
 
