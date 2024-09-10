@@ -15,7 +15,7 @@ export default function page() {
     </div>
     
     return (
-        <Pagina>
+        
             <div>
                 <h1>Primeiro</h1>
                 <div className="flex flex-col">
@@ -28,7 +28,7 @@ export default function page() {
                 </div>
                 {titulo}
             </div>
-        </Pagina>
+        
     )
 }
 

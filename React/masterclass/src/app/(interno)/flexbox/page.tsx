@@ -3,7 +3,7 @@ import Pagina from "@/components/template/Pagina";
 
 export default function flexbox() {
     return (
-        <Pagina>
+       
             <div className="h-screen">
                 <h1>Flexbox</h1>
                 <div className="
@@ -18,6 +18,6 @@ export default function flexbox() {
                     <Caixa texto="#3" className="w-20" />
                 </div>
             </div>
-        </Pagina>
+       
     )
 }

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <Pagina>
+    <div>
       {/* <div className="
          bg-gradient-to-r from-black t0 bg-zinc-800 min-h-screen
      ">
@@ -23,7 +23,10 @@ export default function Home() {
             <h1 className="text-4xl font-black">Olá Usuário</h1>
             <p className="text-lg text-zinc-400">Seja bem-vindo</p>
         </div>
+        <div>
+          <Link href="./primeiro" className="bg-blue-500 rounded-md">Entrar</Link>
+        </div>
       </div>
-    </Pagina>
+    </div>
   );
 }
