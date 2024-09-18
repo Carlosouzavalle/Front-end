@@ -10,16 +10,21 @@ html, body {
 }
 .gameName {
     font-size: 36px;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .container {
     background-color: bisque;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
     display: flex;
+
+    /* observação */
+    flex-direction: column;
+
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border: 1px solid black;
 }
 
 input {
@@ -76,6 +81,7 @@ input {
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
     text-align: center;   
+    margin-top: 15px;
 }
 
 .nextButton:hover {
@@ -84,11 +90,74 @@ input {
 
 
 .IntroductionHistory {
-    border: 1px solid rgb(130, 11, 228);
-    
-    background-color: #4CAF50;
+    padding: 0;
+    margin: 0;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .History_class {
     font-size: 1.5em;
-} 
+}
+
+.mob1 {
+    padding: 10px;
+}
+
+.divStats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.cardAtack {
+    background-color: deepskyblue;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carDef {
+    background-color: deepskyblue;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AtackButton {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #4CAF50; /* Exemplo de cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    text-align: center;   
+    margin-top: 15px;
+}
+
+.AtackButton:hover {
+    background-color: #3f8f42;;
+}
+
+
+.chooseClassDiv {
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+}
