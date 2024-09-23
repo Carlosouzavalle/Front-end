@@ -15,7 +15,6 @@ let AtackButton = document.createElement('button')
 let SelectClassButton = document.createElement('button')
 
 
-
    // Escolhendo sua classe
 function ChooseClasse() {
     inputName.style.display = 'none';
