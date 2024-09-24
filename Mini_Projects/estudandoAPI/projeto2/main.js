@@ -1,10 +1,15 @@
 fetch('https://kitsu.io/api/edge/anime')
   .then(response => {
+
+    // console.log(response)
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error('Erro encontrado');
     }
+    
     return response.json(); // Converte a resposta para JSON
+
   })
+
   .then(data => {
     const animes = data.data; // Acessa a lista de animes no JSON
     
@@ -20,6 +25,11 @@ fetch('https://kitsu.io/api/edge/anime')
       // Cria um elemento <img> para a imagem do anime
       const imgAnime = document.createElement('img');
       imgAnime.src = anime.attributes.posterImage.small; // Atribui o URL da imagem ao src do <img>
+
+
+
+
+
       
       // Adiciona a imagem dentro da <div> do anime
       animeDiv.appendChild(imgAnime);
