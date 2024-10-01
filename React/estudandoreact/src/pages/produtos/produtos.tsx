@@ -1,80 +1,90 @@
-import Card from "@/components/Card"
-import Comp1 from "@/components/Comp1"
+import Card from "@/components/Card";
+import Comp1 from "@/components/Comp1";
 import '@/app/globals.css'; 
+import { useSearchParams } from 'next/navigation'; // useSearchParams para capturar query params
 
-const produtos=[
+const produtos = [
     {
-        produto:'Mouse',
+        id: 1,
+        produto: 'Mouse',
         valor: 49.9,
         desconto: 0,
         disponivel: true
     },
     {
-        produto:'Teclado',
+        id: 2,
+        produto: 'Teclado',
         valor: 69.9,
         desconto: 0,
         disponivel: true
     },
     {
-        produto:'Monitor',
+        id: 3,
+        produto: 'Monitor',
         valor: 1149.9,
         desconto: 0,
         disponivel: true
     },
     {
-        produto:'CPU',
+        id: 4,
+        produto: 'CPU',
         valor: 749.9,
         desconto: 200,
         disponivel: true
     },
     {
-        produto:'Caixa de Som',
+        id: 5,
+        produto: 'Caixa de Som',
         valor: 149.9,
         desconto: 50,
         disponivel: true
     },
     {
-        produto:'Microfone',
+        id: 6,
+        produto: 'Microfone',
         valor: 249.9,
         desconto: 0,
         disponivel: false
     }  
-]
+];
+
+function calcDesconto(v: number, d: number) {
+    return v - d;
+}
+
+function calcDesconto2(v: number, d: number) {
+    return v - (d / 2);
+}
 
 export default function Produtos() {
+    // Usando useSearchParams para capturar os parâmetros da query string
+    const searchParams = useSearchParams();
 
-    function calcDesconto(v:number, d:number) {
-        return v-d
-    }
+    // Usar searchParams.get() pode retornar 'null', então fornecemos um valor padrão usando '??'
+    const nome = searchParams?.get('nome') ?? 'Sem nome';  // Usa 'Sem nome' como fallback
+    const curso = searchParams?.get('curso') ?? 'Sem curso'; // Usa 'Sem curso' como fallback
 
-    function calcDesconto2(v:number, d:number) {
-        return v-(d/2)
-    }
-
+    // Verifica se os parâmetros foram capturados corretamente
+    console.log("Nome:", nome);  // Deve exibir "Carlos" ou "Sem nome"
+    console.log("Curso:", curso); // Deve exibir "React Next" ou "Sem curso"
 
     return (
         <div>
-
             <Comp1 />
 
             <div className="flex justify-center gap-4">
-                {/* <Card produto={'mouse'} valor={50} desconto={2} funcao={calcDesconto}/>
-                <Card produto={'teclado'} valor={500} desconto={3} funcao={calcDesconto}/>
-                <Card produto={'monitor'} valor={5000} desconto={0} funcao={calcDesconto2}/> */}
-
-
                 {
-                    produtos.map((e:any) => {
-                        if(e.disponivel) {
+                    produtos.map((e: any) => {
+                        if (e.disponivel) {
                             return (
-                                <div>
-                                        <Card produto={e.produto} valor={e.valor} desconto={e.desconto} funcao={calcDesconto}/>
+                                <div key={e.id}>
+                                    <Card produto={e.produto} valor={e.valor} desconto={e.desconto} funcao={calcDesconto} />
                                 </div>
-                            )
+                            );
                         }
                     })
                 }
             </div>
         </div>
-    )
+    );
 }
