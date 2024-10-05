@@ -6,6 +6,8 @@ export default function testePagina() {
         <div>
             <Comp1 />
             teste
+
+            
         </div>
     )
 }
