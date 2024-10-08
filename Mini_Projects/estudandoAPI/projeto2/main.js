@@ -25,11 +25,6 @@ fetch('https://kitsu.io/api/edge/anime')
       // Cria um elemento <img> para a imagem do anime
       const imgAnime = document.createElement('img');
       imgAnime.src = anime.attributes.posterImage.small; // Atribui o URL da imagem ao src do <img>
-
-
-
-
-
       
       // Adiciona a imagem dentro da <div> do anime
       animeDiv.appendChild(imgAnime);
