@@ -169,9 +169,6 @@ function ChooseClasse() {
 ChooseClasse();
 
 
-
-
-
 inputName.addEventListener('mouseenter', function () {
     ErrorloginImg.style.display = 'none'
 })

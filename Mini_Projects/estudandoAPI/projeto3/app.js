@@ -5,15 +5,15 @@ async function fetchRandomImages() {
     gallery.innerHTML = ''; // Limpa a galeria antes de carregar novas imagens
 
     const numberOfImages = 5; // Defina o número de imagens que você quer exibir
-    const promises = [];
+    const arrayIMGS = [];
 
     // Faz 5 requisições simultâneas à API
     for (let i = 0; i < numberOfImages; i++) {
-        promises.push(fetch('https://api.waifu.pics/sfw/waifu'));
+        arrayIMGS.push(fetch('https://api.waifu.pics/sfw/waifu'));
     }
 
     try {
-        const responses = await Promise.all(promises); // Espera todas as requisições serem completadas
+        const responses = await Promise.all(arrayIMGS); // Espera todas as requisições serem completadas
         const data = await Promise.all(responses.map(response => response.json()));
 
         // Adiciona as imagens na galeria
