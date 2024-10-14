@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#fetchImage {
+    width: 300px;
+    padding: 10px;
+}
+
+#imageContainer {
+    margin-top: 50px;
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer {
+    width: 350px;
+    height: 350px;
+}

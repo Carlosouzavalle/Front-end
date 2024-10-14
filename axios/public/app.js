@@ -6,6 +6,7 @@ document.getElementById('fetchImage').addEventListener('click', async () => {
         const imageContainer = document.getElementById('imageContainer');
         imageContainer.innerHTML = ''; // Limpa o container anterior
         const img = document.createElement('img'); // Cria um elemento <img>
+        img.classList.add('imgContainer')
         img.src = imgUrl; // Define a URL da imagem
         img.alt = 'Waifu Image'; // Texto alternativo para a imagem
         imageContainer.appendChild(img); // Adiciona a imagem ao container
