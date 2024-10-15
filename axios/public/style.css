@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
 }
 
 #fetchImage {
@@ -13,14 +13,33 @@
 
 #imageContainer {
     margin-top: 50px;
-    width: 600px;
-    height: 800px;
-    overflow: hidden;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+    padding: 20px; /* Adiciona um padding ao container */
 }
 
-.imgContainer {
-    width: 350px;
-    height: 350px;
+/* Efeito de desfocar as imagens não selecionadas */
+.imgContent {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: filter 0.3s ease; /* Adiciona uma transição suave ao filtro */
+}
+
+/* Classe para focar a imagem */
+.imgFocused {
+    filter: none; /* Remove o filtro para a imagem focada */
+    transform: scale(1.05); /* Aumenta levemente a imagem focada */
+    z-index: 10; /* Coloca a imagem focada acima das outras */
+}
+
+/* Classe para desfocar imagens não selecionadas */
+.imgBlurred {
+    filter: blur(4px); /* Aplica um desfoque */
+    opacity: 0.7; /* Diminui a opacidade */
+    transition: filter 0.3s ease, opacity 0.3s ease; /* Adiciona transições suaves */
 }
