@@ -5,7 +5,7 @@
 .header {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(201, 81, 127);
     padding: 25px;
 }
 
@@ -21,11 +21,24 @@
    display: flex;
    justify-content: center;
    padding: 20px;
-   background-color: black;
+   background-color: rgb(201, 81, 127);
 }
 
 .footer h2 {
     color: white;
+    padding-right:10px;
+}
+
+.social, a {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    color: white;
+    text-decoration: none;
+}
+
+.social i:hover {
+    background-color: black;
 }
 
 .container {
@@ -40,6 +53,13 @@
     width: 300px;
     padding: 10px;
     margin-top: 20px;
+    border-radius: 10px ;
+    font-size: 1.6em;
+}
+
+#fetchImage:hover {
+    background-color: rgba(226, 132, 168, 0.884);
+    color: white;
 }
 
 #imageContainer {
