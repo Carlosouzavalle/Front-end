@@ -1,3 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 25px;
+}
+
+.header h2 {
+    font-size: 2em;
+    color: white;
+    /* text-shadow: 5px 5px 5px #000000;
+    -webkit-text-stroke-width: .7px;
+    -webkit-text-stroke-color: black; */
+}
+
+.footer {
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+   background-color: black;
+}
+
+.footer h2 {
+    color: white;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -9,6 +39,7 @@
 #fetchImage {
     width: 300px;
     padding: 10px;
+    margin-top: 20px;
 }
 
 #imageContainer {
@@ -21,20 +52,24 @@
     padding: 20px; /* Adiciona um padding ao container */
 }
 
+
 /* Efeito de desfocar as imagens não selecionadas */
 .imgContent {
     max-width: 100%;
     max-height: 400px;
     object-fit: cover;
     border-radius: 8px;
-    transition: filter 0.3s ease; /* Adiciona uma transição suave ao filtro */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave ao filtro */
 }
 
 /* Classe para focar a imagem */
 .imgFocused {
     filter: none; /* Remove o filtro para a imagem focada */
-    transform: scale(1.05); /* Aumenta levemente a imagem focada */
+    transform: scale(1.5); /* Aumenta levemente a imagem focada */
     z-index: 10; /* Coloca a imagem focada acima das outras */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Classe para desfocar imagens não selecionadas */

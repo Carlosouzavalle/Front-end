@@ -16,6 +16,7 @@ document.getElementById('fetchImage').addEventListener('click', async () => {
         try {
             const responses = await Promise.all(imgArraywaifu); // Espera todas as requisições serem completadas
             const data = await Promise.all(responses.map(response => response.json()));
+            // console.log(typeof(responses))
 
             // Adiciona as imagens na galeria
             data.forEach(item => {
@@ -24,18 +25,21 @@ document.getElementById('fetchImage').addEventListener('click', async () => {
                 img.src = item.url; // Define a URL da imagem
                 img.alt = 'Waifu Image'; // Texto alternativo para a imagem
 
-                // Adiciona evento de clique para focar/desfocar a imagem
-                img.addEventListener('click', () => {
-                    // Remove a classe de foco de todas as imagens
+                // Adiciona evento de mouse para focar/desfocar a imagem
+                img.addEventListener('mouseover', () => {
+                    img.classList.add('imgFocused'); // Adiciona foco à imagem que está sendo "hovered"
+                    const allImages = document.querySelectorAll('.imgContent:not(:hover)');
+                    allImages.forEach(image => {
+                        image.classList.add('imgBlurred'); // Aplica desfoque às imagens não focadas
+                    });
+                });
+
+                img.addEventListener('mouseout', () => {
+                    img.classList.remove('imgFocused'); // Remove o foco da imagem que não está mais "hovered"
                     const allImages = document.querySelectorAll('.imgContent');
                     allImages.forEach(image => {
-                        image.classList.remove('imgFocused');
-                        image.classList.add('imgBlurred'); // Adiciona desfoque a todas as imagens
+                        image.classList.remove('imgBlurred'); // Remove desfoque de todas as imagens
                     });
-
-                    // Adiciona a classe de foco à imagem clicada
-                    img.classList.add('imgFocused');
-                    img.classList.remove('imgBlurred'); // Remove desfoque da imagem focada
                 });
 
                 imageContainer.appendChild(img); // Adiciona a imagem ao container
