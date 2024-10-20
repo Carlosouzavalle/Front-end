@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid black;
+    justify-items: center; /* Centraliza os itens horizontalmente */
+}
+
+img {
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra nas imagens */
+    transition: transform 0.3s; /* Efeito de transição */
+}
+
+img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
