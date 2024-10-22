@@ -1,7 +1,46 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: left;
+    margin-bottom: 10%;
+    display: flex;
+    
+}
+
+.searchBox {
+    padding: 10px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.searchButton {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+.SearchDivContainer {
+   margin-left: 5%;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border: 1px solid black;
     justify-items: center; /* Centraliza os itens horizontalmente */
 }
 
@@ -9,8 +48,16 @@ img {
     border-radius: 8px; /* Bordas arredondadas nas imagens */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra nas imagens */
     transition: transform 0.3s; /* Efeito de transição */
+    
 }
 
 img:hover {
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.animeContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
 }
