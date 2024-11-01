@@ -1,10 +1,16 @@
 
-import Comp1 from "@/components/Comp1";
+// import UseStates from "@/components/UseStates";
+import UseStatess from "@/pages/components/UseStates";
+import UseEffectss from "@/pages/components/UseEffectss";
+
 
 export default function Home() {
   return (
         <div>
-            <Comp1 />
+          
+            {/* <UseStates /> */}
+            < UseStatess />
+            <UseEffectss />
         </div>
   ) 
 

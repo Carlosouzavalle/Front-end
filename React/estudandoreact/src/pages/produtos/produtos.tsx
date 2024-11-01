@@ -1,5 +1,5 @@
-import Card from "@/components/Card";
-import Comp1 from "@/components/Comp1";
+
+import Comp1 from "@/pages/components/Comp1";
 import '@/app/globals.css'; 
 import { useSearchParams } from 'next/navigation'; // useSearchParams para capturar query params
 

@@ -1,5 +1,5 @@
-import Comp1 from "@/components/Comp1"
-import Link from "next/link"
+import Comp1 from "@/pages/components/Comp1"
+
 
 export default function testePagina() {
     return (

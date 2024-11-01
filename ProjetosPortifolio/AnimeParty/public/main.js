@@ -9,6 +9,18 @@ Logo.textContent = "Anime List"; // Adiciona um texto para o logo
 Header.appendChild(Logo);
 body.insertBefore(Header, body.firstChild); // Insere o header no início do body
 
+
+//Footer
+const footer = document.createElement('footer')
+const devName = document.createElement('h2')
+devName.textContent = 'Developedv by Carlos Eduardo'
+footer.classList.add('footer')
+body.appendChild(footer)
+footer.appendChild(devName)
+body.insertBefore(footer, body.lastChild)
+
+
+
 //searchBox config
 const SearchDivContainer = document.createElement('div')
 SearchDivContainer.classList.add('SearchDivContainer')
