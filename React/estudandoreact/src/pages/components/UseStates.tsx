@@ -29,4 +29,4 @@ export default UseStates
 // só podem ser usados em Client Components, que são renderizados no lado do cliente. 
 // Para resolver isso, você precisa marcar 
 // o componente como um Client Component, usando a diretiva "use client" no início do arquivo.
-// vc n pode por um hoook dentro de uma função, if pq vai mudar o numero de vezes que ele vai ser chamado
+// vc n pode por um hook dentro de uma função, if pq vai mudar o numero de vezes que ele vai ser chamado
