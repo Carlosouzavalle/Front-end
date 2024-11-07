@@ -1,1 +1,1 @@
-let cursos=['Javascript']
+let cursos=['Javascript', 'Python']
