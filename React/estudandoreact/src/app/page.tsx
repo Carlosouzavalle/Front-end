@@ -2,8 +2,9 @@
 //  import UseStates from "@/pages/components/UseStates";
 // import UseStatess from "@/pages/components/UseStates";
 // import UseEffectss from "@/pages/components/UseEffectss";
-import TestComponent from "@/pages/components/TestComponent";
+import UseStates2 from "@/pages/components/UseStates2";
 import '@/app/globals.css'
+
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
            {/* <UseStates /> */}
             {/* < UseStatess />
             <UseEffectss /> */}
-            <TestComponent />
+            <UseStates2 />
         </div>
   ) 
 }

@@ -6,7 +6,10 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html>
+    <html lang="en">
+      <head>
+        {/* Adicione elementos <head> aqui, se necessário */}
+      </head>
       <body>{children}</body>
     </html>
   );
