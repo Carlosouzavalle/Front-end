@@ -1,0 +1,14 @@
+"use strict";
+let cursos = ['Javascript', 'Python', 'PHP'];
+let valore2 = [10, 5, 8];
+valore2.push(5000);
+cursos.push('5040');
+console.log(valore2);
+console.log(cursos);
+let vteste;
+vteste = 'dudu';
+vteste = 20;
+let vteste2;
+vteste2 = 'aaa';
+vteste2 = 10;
+vteste2 = true;
