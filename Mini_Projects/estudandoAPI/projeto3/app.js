@@ -1,4 +1,4 @@
-document.getElementById("loadImages").addEventListener("click", fetchRandomImages);
+window.document.getElementById("loadImages").addEventListener("click", fetchRandomImages);
 
 async function fetchRandomImages() {
     const gallery = document.getElementById('gallery');

@@ -1,7 +1,7 @@
-let nome2: string = 'carlos'
-let valor: number = 2
+// let nome2: string = 'carlos'
+// let valor: number = 2
 
-console.log(valor)
+// console.log(valor)
 
 
 /*

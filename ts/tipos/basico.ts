@@ -1,2 +1,2 @@
-let nome: string = 'carlos';
-console.log(nome);
+// let nome: string = 'carlos';
+// console.log(nome);

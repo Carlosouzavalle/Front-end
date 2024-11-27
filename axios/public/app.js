@@ -6,7 +6,7 @@ document.getElementById('fetchImage').addEventListener('click', async () => {
         const imageContainer = document.getElementById('imageContainer');
         imageContainer.innerHTML = ''; // Limpa o container anterior
 
-        const qtdImgs = 5; // quantidade de imgs no array
+        const qtdImgs = 4; // quantidade de imgs no array
         const imgArraywaifu = [];
 
         for (let i = 0; i < qtdImgs; i++) {

@@ -76,7 +76,7 @@
 /* Efeito de desfocar as imagens não selecionadas */
 .imgContent {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 300px;
     object-fit: cover;
     border-radius: 8px;
     transition: filter 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave ao filtro */
