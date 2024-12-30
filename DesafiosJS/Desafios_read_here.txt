@@ -1,0 +1,55 @@
+Aqui você vai encontrar todos os desafios para fazer
+
+
+1  escreva um programa que apresente ola mundo
+2 faça um programa que leia o nome de uma pessoa e mostre uma mensgem de boas-vindas
+3 faça um algoritmo que mostre a soma entre dois valores
+4 faça um programa que mostre os seguintes resultados de um determinado valor 
+(tipo, se tem espaços, se é um numero, se é alfabético, se é alfanumerico, se esta em maiusculo, 
+se esta em minusculo, e se esta capitalizado ) 
+5 faça um programa que mostre seu sucessor e antecessor
+6 crie um algoritmo que mostre o dobro, o triplo e a raiz
+7 Reverter uma String
+8 Contar Vogais em uma String
+9 Remover Duplicatas de um Array
+10 Trocar Valores de Variáveis
+11 Calcular Fatorial
+12 par ou impar
+13 Gerar uma Lista de Números
+14 conversor de moedas
+15 media de um aluno
+16 faça um programa que receba a altura e a largura mostre o tamanho em m² e quantos litros de tinta precisa para pintar
+a cada 2m de parede precisa de 1L de tinta
+17 crie um algoritmo que leia o preço de um produto e apresente ele com 5% de desconto
+18 crie um algoritmo que leia o salario de um funcionario e reajuste ele em 15%
+19 conversão de temperatura de celsius para Fahrenheit 
+20 crie um algoritmo que pergunte a quantidade de km percorridos por um carro alugado e a quantidade de dias pelo 
+qual foi alugado. sendo que o preço a pagar é 60R$ por dia e 0,15R$ por km rodado
+21 crie um algoritmo que leia um numero e mostre sua porção inteira
+22 faça um programa que leia o comprimento do cateto oposto e do cateto adjacente
+um triângulo, calcule e mostre o comprimento da hipotenusa.
+23 faça um programa que leia um angulo e mostre seu seno, cosseno e tangente
+24 sorteando un item da lista
+25 lista aleatoria
+26 tocar uma musica em python
+27 analisando um texto
+28 Separando dígitos de um número unidade, centena,dezena e milhar
+29 verifica se tem a palavra santo
+30 seu nome tem silva
+31 analisando um frase
+32 Primeiro e último nome de uma pessoa
+33 Jogo da Adivinhação numero aleatorio
+34 Radar eletrônico
+35 calcular o preço de uma viagem em km. calcule o preço da passagem
+cobrando 0.50 por km para viagens acima de 200km e 0.45 para viagens mais longas
+36 escreva um programa em metros e mostre ele em outras medidas
+37 faça um programa que leia um valor e apresente sua tabuada
+38 crie um algoritmo que receba o valor em real e converta ele para dolar
+39 Maior e menor valores
+40 aumentos multiplos
+41 conversor de bases
+42 Aprovando Empréstimo
+
+
+
+

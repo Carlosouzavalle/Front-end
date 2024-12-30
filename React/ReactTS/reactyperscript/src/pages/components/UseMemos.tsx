@@ -1,51 +1,54 @@
-'use client'
-import React, { useState, useMemo } from 'react';
+// 'use client'
 
-function UseMemos({ items = [] }: { items?: string[] }) { // Definindo o tipo de `items` como `string[]`
-  const [query, setQuery] = useState('');
-  const [showSuggestions, setShowSuggestions] = useState(false);
+import { useMemo } from "react"
 
-  // UseMemo agora vai funcionar sem problemas mesmo se `items` estiver vazio
-  const filteredItems = useMemo(() => {
-    if (!items || items.length === 0) return []; // Retorna uma lista vazia caso não haja itens
-  
-    const safeQuery = query?.toLowerCase() ?? ''; // Query segura
-    return items.filter((item) =>
-      typeof item === 'string' && item.toLowerCase().includes(safeQuery)
-    );
-  }, [items, query]);
+// import { useState, useMemo } from "react";
 
-  // Controle da exibição das sugestões
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setQuery(e.target.value);
-    setShowSuggestions(e.target.value.length > 0);
-  };
+// const UseMemos = () => {
+//     const [search, setSearch] = useState("");
+//     const [items] = useState(["React", "Vue", "Angular", "Svelte", "Ember"]);
 
-  return (
-    <div>
-      <input
-        type="text"
-        value={query}
-        onChange={handleInputChange}
-        placeholder="Digite para filtrar"
-        className="border p-2"
-      />
+//     const filteredItems = useMemo(() => {
+//         console.log("Filtrando...");
+//         return items.filter((item) =>
+//             item.toLowerCase().includes(search.toLowerCase())
+//         );
+//     }, [search, items]);
 
-      {/* Mostrar as sugestões apenas se houver alguma */}
-      {showSuggestions && filteredItems.length > 0 && (
-        <ul>
-          {filteredItems.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      )}
+//     return (
+//         <div>
+//             <input
+//                 type="text"
+//                 placeholder="Buscar"
+//                 value={search}
+//                 onChange={(e) => setSearch(e.target.value)}
+//             />
+//             <ul>
+//                 {filteredItems.map((item) => (
+//                     <li key={item}>{item}</li>
+//                 ))}
+//             </ul>
+//         </div>
+//     );
+// };
 
-      {/* Exibir uma mensagem caso não haja sugestões */}
-      {showSuggestions && filteredItems.length === 0 && (
-        <p>Nenhum item encontrado</p>
-      )}
-    </div>
-  );
+// export default UseMemos;
+
+
+export default function UseMemos() {
+
+    const soma = useMemo(() => {
+        console.log('calculando')
+        return 2 + 2
+    }, [])
+
+
+
+
+
+    return (
+        <div>
+            {soma}
+        </div>
+    )
 }
-
-export default UseMemos;

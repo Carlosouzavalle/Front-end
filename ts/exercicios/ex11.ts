@@ -1,4 +1,4 @@
-// crie um algoritmo que leia o preço de um produto e apresente ele com 5% de desconto
+// // crie um algoritmo que leia o preço de um produto e apresente ele com 5% de desconto
 
 // let valorProduto: number = 100
 // let desconto: number = 0.05 // 5% do produto
