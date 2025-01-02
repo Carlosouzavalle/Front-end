@@ -49,7 +49,4 @@ cobrando 0.50 por km para viagens acima de 200km e 0.45 para viagens mais longas
 40 aumentos multiplos
 41 conversor de bases
 42 Aprovando Empréstimo
-
-
-
-
+43 conversão de bases
