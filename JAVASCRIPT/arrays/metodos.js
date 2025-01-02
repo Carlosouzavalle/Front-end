@@ -29,7 +29,6 @@
 
 */
 
-
 let nomes = ['Carlos', 'Maria', 'Bruna']
 
 //=============POP - remove the last element in the array
